@@ -30,7 +30,7 @@ const CourseListPage = () => {
   }
 
   return (
-    <div className="">
+    <div>
       <SearchBar onSearch={setSearchQuery} />
       <div className="p-4 grid mt-10 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {filteredCourses.length > 0 ? (
@@ -40,7 +40,7 @@ const CourseListPage = () => {
             </div>
           ))
         ) : (
-          <p className="text-gray-600 text-center mt-4">No courses found</p>
+          <p className="h-screen text-gray-600 text-center mt-4">No courses found</p>
         )}
       </div>
       <Footer />
